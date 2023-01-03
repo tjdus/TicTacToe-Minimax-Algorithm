@@ -101,7 +101,7 @@ def Minimax(board, turn):
                 score = Minimax(boardCopy, next)
                 bestscore = max(score, bestscore)
     else:
-        bestscore = float('-inf')
+        bestscore = float('inf')
         for i in range(9):
             if IsEmpty(board, i):
                 boardCopy = GetBoardCopy(board)
